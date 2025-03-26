@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Learn German</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('/DALL·E 2025-03-26.webp'); /* Background image */
+            background-size: cover; /* Ensures the background image covers the entire screen */
+            text-align: center;
+            color: white;
+            transition: opacity 1s ease-in-out;
+            opacity: 0;
+        }
+        .container {
+            background: white; /* Set container background to white */
+            padding: 50px 40px; /* Increased padding for larger box */
+            border-radius: 15px; /* Rounded corners for a creative look */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            max-width: 700px; /* Increased max-width for a larger box */
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.05); /* Slightly enlarge the container on hover */
+        }
+        h1 {
+            font-size: 3em;
+            color: black; /* Set header text color to black */
+            margin-bottom: 20px;
+        }
+        .description-box {
+            background-color: white; /* White background for the description box */
+            color: black; /* Black text color inside the description box */
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Light shadow for the description box */
+        }
+        p {
+            font-size: 1.3em;
+            margin: 20px 0;
+            color: black; /* Ensure text is black inside description box */
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1.3em;
+            color: white;
+            background: #008000;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background: #006400;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.opacity = "1";
+        });
+
+        function transitionPage() {
+            document.body.style.opacity = "0";
+            setTimeout(function() {
+                window.location.href = "index.html";
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Learn German</h1>
+        <p>Your efficient way to master the German language through interactive lessons, flashcards, and quizzes.</p>
+        <div class="description-box">
+            <p>Welcome to <strong>Learn German</strong> – your go-to platform for mastering the German language with ease and efficiency. Our website offers a dynamic learning experience through a variety of engaging methods, including interactive lessons, flashcards, and quizzes. Whether you're a beginner or looking to sharpen your skills, we’ve designed our platform to help you learn at your own pace with focused, time-efficient lessons. Track your progress as you go and watch yourself improve step by step. Start your journey with us and take the first step towards becoming fluent in German!</p>
+        </div>
+        <button class="btn" onclick="transitionPage()">Get Started</button>
+    </div>
+</body>
+</html>

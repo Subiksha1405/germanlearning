@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Language Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Language Learning Web</h1>
+</header>
+
+<div class="container">
+    <!-- Flashcards Section -->
+    <div class="flashcards">
+        <h2>German Flashcards</h2>
+        <div class="flashcard" onclick="this.classList.toggle('flip')">
+            <div class="front">Haus</div>
+            <div class="back">House</div>
+        </div>
+        <div class="flashcard" onclick="this.classList.toggle('flip')">
+            <div class="front">Apfel</div>
+            <div class="back">Apple</div>
+        </div>
+        <div class="flashcard" onclick="this.classList.toggle('flip')">
+            <div class="front">Auto</div>
+            <div class="back">Car</div>
+        </div>
+        <div class="flashcard" onclick="this.classList.toggle('flip')">
+            <div class="front">Buch</div>
+            <div class="back">Book</div>
+        </div>
+        <div class="flashcard" onclick="this.classList.toggle('flip')">
+            <div class="front">Hund</div>
+            <div class="back">Dog</div>
+        </div>
+        <div class="flashcard" onclick="this.classList.toggle('flip')">
+            <div class="front">Katze</div>
+            <div class="back">Cat</div>
+        </div>
+        <div class="flashcard" onclick="this.classList.toggle('flip')">
+            <div class="front">Vogel</div>
+            <div class="back">Bird</div>
+        </div>
+        <div class="flashcard" onclick="this.classList.toggle('flip')">
+            <div class="front">Tisch</div>
+            <div class="back">Table</div>
+        </div>
+        <div class="flashcard" onclick="this.classList.toggle('flip')">
+            <div class="front">Stuhl</div>
+            <div class="back">Chair</div>
+        </div>
+        <div class="flashcard" onclick="this.classList.toggle('flip')">
+            <div class="front">Fenster</div>
+            <div class="back">Window</div>
+        </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="quiz">
+        <h2>German Language Quiz</h2>
+        <form id="quizForm">
+            <!-- Questions 1 to 10 -->
+            <div class="question">
+                <p>1. What is the German word for "Dog"?</p>
+                <input type="radio" id="q1a" name="q1" value="a">
+                <label for="q1a" class="quiz-option">Hund</label><br>
+                <input type="radio" id="q1b" name="q1" value="b">
+                <label for="q1b" class="quiz-option">Katze</label><br>
+                <input type="radio" id="q1c" name="q1" value="c">
+                <label for="q1c" class="quiz-option">Haus</label><br>
+                <input type="radio" id="q1d" name="q1" value="d">
+                <label for="q1d" class="quiz-option">Vogel</label><br>
+            </div>
+
+            <div class="question">
+                <p>2. What is the German word for "Book"?</p>
+                <input type="radio" id="q2a" name="q2" value="a">
+                <label for="q2a" class="quiz-option">Buch</label><br>
+                <input type="radio" id="q2b" name="q2" value="b">
+                <label for="q2b" class="quiz-option">Apfel</label><br>
+                <input type="radio" id="q2c" name="q2" value="c">
+                <label for="q2c" class="quiz-option">Auto</label><br>
+                <input type="radio" id="q2d" name="q2" value="d">
+                <label for="q2d" class="quiz-option">Tisch</label><br>
+            </div>
+
+            <div class="question">
+                <p>3. What is the German word for "Water"?</p>
+                <input type="radio" id="q3a" name="q3" value="a">
+                <label for="q3a" class="quiz-option">Wasser</label><br>
+                <input type="radio" id="q3b" name="q3" value="b">
+                <label for="q3b" class="quiz-option">Feuer</label><br>
+                <input type="radio" id="q3c" name="q3" value="c">
+                <label for="q3c" class="quiz-option">Baum</label><br>
+                <input type="radio" id="q3d" name="q3" value="d">
+                <label for="q3d" class="quiz-option">Blume</label><br>
+            </div>
+
+            <div class="question">
+                <p>4. What is the German word for "House"?</p>
+                <input type="radio" id="q4a" name="q4" value="a">
+                <label for="q4a" class="quiz-option">Haus</label><br>
+                <input type="radio" id="q4b" name="q4" value="b">
+                <label for="q4b" class="quiz-option">Fenster</label><br>
+                <input type="radio" id="q4c" name="q4" value="c">
+                <label for="q4c" class="quiz-option">Auto</label><br>
+                <input type="radio" id="q4d" name="q4" value="d">
+                <label for="q4d" class="quiz-option">Vogel</label><br>
+            </div>
+
+            <div class="question">
+                <p>5. What is the German word for "Chair"?</p>
+                <input type="radio" id="q5a" name="q5" value="a">
+                <label for="q5a" class="quiz-option">Stuhl</label><br>
+                <input type="radio" id="q5b" name="q5" value="b">
+                <label for="q5b" class="quiz-option">Katze</label><br>
+                <input type="radio" id="q5c" name="q5" value="c">
+                <label for="q5c" class="quiz-option">Buch</label><br>
+                <input type="radio" id="q5d" name="q5" value="d">
+                <label for="q5d" class="quiz-option">Apfel</label><br>
+            </div>
+
+            <div class="question">
+                <p>6. What is the German word for "Cat"?</p>
+                <input type="radio" id="q6a" name="q6" value="a">
+                <label for="q6a" class="quiz-option">Katze</label><br>
+                <input type="radio" id="q6b" name="q6" value="b">
+                <label for="q6b" class="quiz-option">Hund</label><br>
+                <input type="radio" id="q6c" name="q6" value="c">
+                <label for="q6c" class="quiz-option">Vogel</label><br>
+                <input type="radio" id="q6d" name="q6" value="d">
+                <label for="q6d" class="quiz-option">Fenster</label><br>
+            </div>
+
+            <div class="question">
+                <p>7. What is the German word for "Bird"?</p>
+                <input type="radio" id="q7a" name="q7" value="a">
+                <label for="q7a" class="quiz-option">Vogel</label><br>
+                <input type="radio" id="q7b" name="q7" value="b">
+                <label for="q7b" class="quiz-option">Apfel</label><br>
+                <input type="radio" id="q7c" name="q7" value="c">
+                <label for="q7c" class="quiz-option">Tisch</label><br>
+                <input type="radio" id="q7d" name="q7" value="d">
+                <label for="q7d" class="quiz-option">Stuhl</label><br>
+            </div>
+
+            <div class="question">
+                <p>8. What is the German word for "Window"?</p>
+                <input type="radio" id="q8a" name="q8" value="a">
+                <label for="q8a" class="quiz-option">Fenster</label><br>
+                <input type="radio" id="q8b" name="q8" value="b">
+                <label for="q8b" class="quiz-option">Haus</label><br>
+                <input type="radio" id="q8c" name="q8" value="c">
+                <label for="q8c" class="quiz-option">Vogel</label><br>
+                <input type="radio" id="q8d" name="q8" value="d">
+                <label for="q8d" class="quiz-option">Baum</label><br>
+            </div>
+
+            <div class="question">
+                <p>9. What is the German word for "Table"?</p>
+                <input type="radio" id="q9a" name="q9" value="a">
+                <label for="q9a" class="quiz-option">Tisch</label><br>
+                <input type="radio" id="q9b" name="q9" value="b">
+                <label for="q9b" class="quiz-option">Apfel</label><br>
+                <input type="radio" id="q9c" name="q9" value="c">
+                <label for="q9c" class="quiz-option">Stuhl</label><br>
+                <input type="radio" id="q9d" name="q9" value="d">
+                <label for="q9d" class="quiz-option">Buch</label><br>
+            </div>
+
+            <div class="question">
+                <p>10. What is the German word for "Tree"?</p>
+                <input type="radio" id="q10a" name="q10" value="a">
+                <label for="q10a" class="quiz-option">Baum</label><br>
+                <input type="radio" id="q10b" name="q10" value="b">
+                <label for="q10b" class="quiz-option">Katze</label><br>
+                <input type="radio" id="q10c" name="q10" value="c">
+                <label for="q10c" class="quiz-option">Vogel</label><br>
+                <input type="radio" id="q10d" name="q10" value="d">
+                <label for="q10d" class="quiz-option">Haus</label><br>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="button" class="submit" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+    </div>
+</div>
+
+<!-- Daily Learning Challenge Section -->
+<div class="daily-challenge">
+    <h2>Daily Learning Challenge</h2>
+    <p id="challengeText">Loading challenge...</p>
+
+    <form id="challengeForm">
+        <label for="sentence1">1. Write a sentence using the word "Haus" (house):</label><br>
+        <input type="text" id="sentence1" name="sentence1" placeholder="Your sentence here" required><br><br>
+
+        <label for="sentence2">2. Write a sentence using the word "Apfel" (apple):</label><br>
+        <input type="text" id="sentence2" name="sentence2" placeholder="Your sentence here" required><br><br>
+
+        <label for="sentence3">3. Write a sentence using the word "Hund" (dog):</label><br>
+        <input type="text" id="sentence3" name="sentence3" placeholder="Your sentence here" required><br><br>
+
+        <button type="button" class="submit" onclick="submitChallenge()">Submit Sentences</button>
+    </form>
+
+    <div id="feedback"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
